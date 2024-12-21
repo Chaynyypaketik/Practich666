@@ -1,0 +1,220 @@
+/* Общие стили */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #5e44e2;
+}
+
+a:hover {
+    color: #2c1b61;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #2c1b61;
+    margin-bottom: 10px;
+}
+
+
+/* Стили для шапки */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #444;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #5e44e2;
+}
+
+/* Стили для секции Hero */
+.hero {
+    background-image: linear-gradient(to right, #f0faff, #e1f3ff);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.highlight {
+    color: #5e44e2;
+    font-weight: 700;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #5e44e2;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #2c1b61;
+}
+
+/* Стили для секции About */
+
+.about {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.about-text{
+    flex: 1;
+}
+
+.about-image{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Стили для секции Портфолио */
+.portfolio {
+    padding: 80px 0;
+    background-color: #f7f7fc;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.portfolio-item h3 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+
+/* Стили для секции Навыки */
+.skills {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.skill-item {
+    background-color: #f7f7fc;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e7e7e7;
+}
+
+.skill-item h3 {
+    margin-bottom: 15px;
+    color: #2c1b61;
+}
+
+.skill-item ul {
+    padding-left: 20px;
+}
+
+
+/* Стили для секции Контакты */
+.contact {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f0faff;
+}
+
+
+.contact-list {
+    margin-top: 30px;
+}
+
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+
+/* Стили для подвала */
+footer {
+    background-color: #2c1b61;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
